@@ -1,0 +1,119 @@
+body {
+    clear: both;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+    padding : 5px;
+    font-family: sans-serif;
+    color: #ffe6a6;
+    font-weight : 200;
+    padding-left: 5px;
+    float: left;
+}
+
+p {
+    color: #ffffff;
+    padding-left: 5px;
+    padding-right : 5px;
+    text-align: center;
+}
+
+a {
+    color: #ffe6a6;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #bfac7c;
+}
+
+.peace {
+    background-size: contain;
+    height : 15%;
+    max-width: 70px;
+    max-height : 70px;
+    background-repeat: no-repeat;
+    border: 0;
+    outline: none;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+#overlayPanel{
+    background-color: #7F7353;
+    width:60%;
+    height: 80%;
+    margin: auto;
+    overflow: auto;
+    -webkit-filter: blur(0px);
+}
+
+#closeButton{
+    float: right;
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)), -moz-radial-gradient(#f2f2f2, #cccccc);
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)), -webkit-radial-gradient(#f2f2f2, #cccccc);
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)), radial-gradient(#f2f2f2, #cccccc);
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    -moz-box-shadow: inset 0 1px 1px rgba(191, 191, 191, 0.75), 0 2px 1px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: inset 0 1px 1px rgba(191, 191, 191, 0.75), 0 2px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 1px 1px rgba(191, 191, 191, 0.75), 0 2px 1px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    border: 2px solid #e6e6e6;
+    color: #b3b3b3;
+    float: right;
+    height: 23px;
+    width: 23px;
+    text-indent: -9999px;
+    position: absolute;
+    text-decoration: none;
+}
+
+#closeButton::after {
+    content: "\2716";
+    text-indent: 0;
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    font-size: 12px;
+}
+
+#closeButton:hover {
+    color: #e6e6e6;
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)), -moz-radial-gradient(#b3b3b3, #8c8c8c);
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)), -webkit-radial-gradient(#b3b3b3, #8c8c8c);
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)), radial-gradient(#b3b3b3, #8c8c8c);
+    text-shadow: 0 -1px 0 rgba(153, 153, 153, 0.5);
+    cursor: pointer;
+}
+
+#closeButton:active {
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)), -moz-radial-gradient(#8c8c8c, #808080);
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)), -webkit-radial-gradient(#8c8c8c, #808080);
+    background: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)), radial-gradient(#8c8c8c, #808080);
+    text-shadow: 0 -1px 0 rgba(26, 26, 26, 0.5);
+    cursor: pointer;
+}
+
+#header {
+    overflow: auto;
+    width: 100%;
+    display: block;
+    background: #403929;
+}
+
+#closePositioner{
+    float:right;
+    left: 5px;
+    top: 5px;
+    clear: left;
+    width : 30px;
+    margin-top: -40px;
+}
