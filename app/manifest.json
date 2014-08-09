@@ -25,7 +25,7 @@
       "js": [
 	    "scripts/libs/jquery-2.1.1.min.js",
         "scripts/contentscript.js",
-        "scripts/libs/jquery.fittext.js"
+        "scripts/filters.js"
       ],
       "run_at": "document_end",
       "all_frames": false
@@ -34,13 +34,14 @@
 	"web_accessible_resources" : [
 		"images/peace.svg",
 		"images/test.svg",
-		"pages/overlay.html",
 		"styles/overlay.css",
 		"images/mdn-logo-sm.png",
 		"options.html",
 	    "scripts/filters.js",
 	    "scripts/overlay.js",
 	    "css/options.css",
+	    "scripts/libs/jquery.fittext.js",
+	    "scripts/libs/jquery-2.1.1.min.js",
 	    "scripts/libs/jquery.fittext.js"
 	]
 }
