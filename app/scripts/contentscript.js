@@ -22,7 +22,7 @@ var overlayContent = "<head>\
 		                     </div>\
 \
 	                     </div>\
-	                     <p>You might not want to view this as:</p>\
+	                     <p>This content supports the occupation of Palestine as:</p>\
 \
 	                    {{REASON}}\
 	                    \
@@ -51,6 +51,24 @@ window.addEventListener( "message", function( event ) {
 	}
 }, true );
 
+function checkContent(){
+
+	checkForWidgets();
+	checkSite();
+}
+
+
+
+function checkSite(){
+
+	var site = document.location.host;
+
+	if( site.match( filters[ "fiverr" ].url ) ){
+
+		findAndObscure( $( 'body' ), "fiverr" );
+	}
+
+}
 
 function checkForWidgets() {
 
@@ -134,4 +152,4 @@ function getTotalHeight( target ) {
 	return totalHeight;
 }
 
-$( checkForWidgets );
+$( checkContent );
